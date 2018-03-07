@@ -1,0 +1,17 @@
+.hero{
+    @include background-2x( '../img/hero_bg_xs', 'jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vmax;
+
+    @include media-breakpoint-up(sm) { 
+        @include background-2x( '../img/hero_bg', 'jpg');
+        background-repeat:no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 115vh;
+    }
+}
+
+
