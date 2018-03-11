@@ -1,17 +1,57 @@
 .hero{
+    top: 0;
+    width: 100vw;
+    padding-top: 16vh;
+
     @include background-2x( '../img/hero_bg_xs', 'jpg');
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vmax;
+    height: 115vmax;
 
     @include media-breakpoint-up(sm) { 
+        padding-top: 32vh;
+
         @include background-2x( '../img/hero_bg', 'jpg');
         background-repeat:no-repeat;
         background-position: center;
         background-size: cover;
         height: 115vh;
     }
+
+    .play-btn{
+        img {
+            &:nth-child(2) {
+                display: none;
+            }
+        }
+
+        &:hover{
+            img {
+                &:nth-child(1){
+                    display: none;
+                }
+    
+                &:nth-child(2){
+                    display: block;
+                }                
+            }
+        }
+    }
+
+    .hero-arrow {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        margin-bottom: 7vh; 
+        color: $primary;
+
+        a {
+            &:hover {
+                color: $secondary;
+            }
+    
+        }
+
+    }
 }
-
-

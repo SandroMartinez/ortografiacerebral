@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prueba</title>
 </head>
+
 <body>
-<div class="hero">
-    <header class="row ">
-        <div class="col-1"></div>
-         <div class="col-3 col-md-2">
-           <img class="img-fluid" src=img/logo.png alt="ortografía cerebral" />
-         </div>
-    </header>
-    <div class="row border h-100">
-      <div class="col-12 col-md-8 text-white border">
-        Traductora de tu inconsciente...
+
+  <nav class="navbar navbar-expand-lg position-absolute p-0">
+    <a class="navbar-brand ml-5 mr-0 pt-0" href="#">
+      <img class="img-fluid" src=img/logo.png alt="ortografía cerebral" />
+    </a>
+    <h4 class="navbar-title ml-auto">Ortografía</h4>
+    <img class="nav-separator mx-3" src="img/separator.png" alt="|" />
+    <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa fa-bars fa-2x"></i>
+    </button>
+    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="navbarSupportedContent">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Cerebral
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Financiera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Empresarial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mujeres Adas</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="row mx-0">
+      <div class="col-12 col-sm-7 text-white d-flex justify-content-center">
+        <h2 class="animated fadeInLeftBig mt-5">Traductora de tu inconsciente...</h2>
       </div>
-      <div class="col-12 col-md-4 border">
+      <div class="col-md-6"></div>
+    </div>
+    <div class="row mx-0 pt-md-3 pt-lg-4">
+      <div class="col-2 col-sm-1"></div>
+      <div class="col-2 col-lg-2 p-0 d-flex justify-content-end">
+        <a class="play-btn" href="#">
+          <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
+          <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
+        </a>
       </div>
-    </div>     
-  </div>    
+      <div class="m-0 col-8 col-sm-4 col-lg-4 text-white d-flex justify-content-start align-items-center">
+        <h3>Dra. Mirna Juraidini</h3>
+      </div>
+    </div>
+    <div class="row mx-0 d-flex justify-content-center">
+      <div class="hero-arrow col-1 d-none d-sm-block">
+        <a href="#">
+            <i class="fa fa-angle-down fa-4x"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 </html>

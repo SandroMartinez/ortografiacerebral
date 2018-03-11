@@ -1,1 +1,14 @@
 $primary:   #2C589C;
+$secondary: #21B8DB;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  x2: 1366px,
+  x3: 1440px,
+  x4: 1600px,
+  x5: 1920px,
+) !default;

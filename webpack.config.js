@@ -36,6 +36,7 @@ const CONFIG = {
     bootstrapConfig,
     'tether',
     'font-awesome/scss/font-awesome.scss',
+    'animate.css/animate.min.css'
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -44,6 +45,7 @@ const CONFIG = {
   module: {
     rules:[
       { test: /\.html$/, use: 'html-loader' },
+      { test: /\.css$/, use: ['style-loader','css-loader'] },
       { test: /\.scss$/, use: cssConfig },
       {
         test: /\.js$/,

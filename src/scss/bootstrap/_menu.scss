@@ -1,0 +1,84 @@
+.navbar {
+    z-index: 1000;
+    background-color: transparent !important;
+    position: absolute;
+    width: 100%;
+
+    .navbar-brand {
+        width: 15%;
+
+        @include media-breakpoint-up(sm) { 
+            width: 8%;
+        }
+    }
+
+    .navbar-title {
+        color: #FFF;
+        text-transform: uppercase;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) { 
+            margin-bottom: 3rem;
+        }
+    }
+
+    .nav-separator {
+        display: none;
+
+        @include media-breakpoint-up(lg) { 
+            display: block;
+            margin-bottom: 2.0rem;
+        }        
+    }
+
+    .navbar-toggler {
+         color: rgba(255, 255, 255, 1);
+         width: 15%;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+        @include media-breakpoint-down(md) {
+            box-shadow:  0 14px 10px -1px rgba(0, 0, 0, 0.3);             
+        }
+    }
+
+    .nav-item a {
+        color:white;
+        text-transform: uppercase;
+    }
+
+    .navbar-nav {
+        @include media-breakpoint-down(md) {
+            background: rgba(44, 88, 156, .98);
+        }
+
+        li {
+            &:hover{
+                @include media-breakpoint-down(md) { 
+                    background: rgba(26,101,213,.5);
+                }                
+            }
+        }
+
+        a {
+            text-align: center;
+            
+            @include media-breakpoint-down(md) { 
+                margin-top: 0.5em;
+                margin-bottom: 0.5em;
+                font-size: 1.5rem;
+    
+            }
+            @include media-breakpoint-up(lg) { 
+                margin-right: 1rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+
+    }
+
+}
