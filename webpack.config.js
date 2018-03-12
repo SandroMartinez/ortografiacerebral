@@ -14,7 +14,8 @@ const bootstrapConfig = isProd ? bootstrapEntryPoints.prod : bootstrapEntryPoint
 const cssDev = ['style-loader','postcss-loader','sass-loader'];
 const cssProd = ExtractTextPlugin.extract({
   fallback: 'style-loader',
-  use: [ // { loader: 'css-loader', // translates CSS into CommonJS modules }, 
+  use: [ 
+    { loader: 'css-loader', }, 
     {
       loader: 'postcss-loader', // Run post css actions
       options: {
@@ -61,7 +62,7 @@ const CONFIG = {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            publicPath: 'img/',
+            publicPath: './img/',
             outputPath: 'img/'
           }  
         },{
@@ -69,7 +70,7 @@ const CONFIG = {
            options: {
              mozjpeg: { progressive: true, quality: 75 },
              optipng: { enabled: true },
-          //   pngquant: { quality: '65-90', speed: 4 },
+             pngquant: { quality: '65-90', speed: 4 },
           //   gifsicle: { interlaced: false },
           //   webp: { quality: 75 }
             }
@@ -84,8 +85,8 @@ const CONFIG = {
             options: {
               limit:10000,
               name: '[name].[ext]',
-              publicPath: 'fonts/',
-              outputPath: 'fonts/'               
+              publicPath: './fonts/',
+              outputPath: './fonts/'               
             }
           }
         ]
@@ -127,9 +128,9 @@ const CONFIG = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-    new PurifyCSSPlugin({
-      paths: glob.sync(path.join(__dirname, 'src/*.html'))
-    }),
+    // new PurifyCSSPlugin({
+    //   paths: glob.sync(path.join(__dirname, 'src/*.html'))
+    // }), It caused problems with overwritten navbar definitions
     new webpack.ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery',
