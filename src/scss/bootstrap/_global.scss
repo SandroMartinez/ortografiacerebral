@@ -1,28 +1,33 @@
 html, body {
-    font-size: 10px !important;
+
+    font-size: 12px !important;
     
     @include media-breakpoint-up(sm) { 
-        font-size: 11px !important;
+        font-size: 12px !important;
      }
     @include media-breakpoint-up(md) { 
-        font-size: 13px !important;
+        font-size: 12px !important;
      }
     @include media-breakpoint-up(lg) { 
-        font-size: 14px !important;
+        font-size: 13px !important;
      }
      @include media-breakpoint-up(xl) { 
-        font-size: 16px !important;
+        font-size: 14px !important;
      }
      @include media-breakpoint-up(x2) { 
-        font-size: 18px !important;
+        font-size: 16px !important;
      }
      @include media-breakpoint-up(x3) { 
-        font-size: 20px !important;
+        font-size: 19px !important;
      }
      @include media-breakpoint-up(x4) { 
-        font-size: 22px !important;
+        font-size: 21px !important;
      }
      @include media-breakpoint-up(x5) { 
-        font-size: 25px !important;
+        font-size: 22px !important;
+     }
+
+     p {
+          font-weight: 200;
      }
 }

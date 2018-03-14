@@ -33,9 +33,10 @@ const cssConfig = isProd ? cssProd : cssDev;
 const CONFIG = {
   devtool: 'eval',
   entry: [
-    './src/js/app.js',
     bootstrapConfig,
     'tether',
+    'smooth-scroll/dist/js/smooth-scroll.min.js',
+    './src/js/app.js',
     'font-awesome/scss/font-awesome.scss',
     'animate.css/animate.min.css'
   ],
