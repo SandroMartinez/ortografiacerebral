@@ -38,6 +38,7 @@ const CONFIG = {
     'smooth-scroll/dist/js/smooth-scroll.min.js',
     './src/js/app.js',
     'font-awesome/scss/font-awesome.scss',
+    'scrollreveal/dist/scrollreveal.min.js',
     'animate.css/animate.min.css'
   ],
   output: {

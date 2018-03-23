@@ -1,0 +1,85 @@
+.ma {
+    color: #E86AD0;
+    background: linear-gradient(to right, #102C73, #3371F9);
+
+    .top {
+        background-color: white;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 50%;
+        top: 0 !important;
+    }
+
+    .content {
+        background-color: white;
+
+        @include media-breakpoint-up(sm) { 
+            @include background-2x( '../img/ma_bg', 'jpg');
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    
+        .carousel-item {
+            img {
+                background-color: #E86AD0;
+            }
+        }
+
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23E86AD0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+        }
+
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23E86AD0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+        }
+
+        .carousel-indicators {
+            li {
+                background-color: #EEC0E3;
+            }
+            .active {
+                background-color: #E86AD0;        
+            }
+        }
+        
+
+
+        .nav-link {
+            color: #E86AD0;  
+            background-image: url('../img/separator_pink.png') ;
+        }
+        .image-container {
+
+            position: relative;
+            .play-btn {
+                position: absolute;
+                right: 0;
+                bottom: 10%;
+                @include media-breakpoint-up(sm) { 
+                    bottom: 30%;
+                }
+                @include media-breakpoint-up(md) { 
+                    bottom: 10%;
+                }
+                @include media-breakpoint-up(xl) { 
+                    //right: 10%;
+                    bottom: 5%;
+                }
+                @include media-breakpoint-up(x2) { 
+                    right: 10%;
+                    bottom: 10%;
+                }
+            }
+        } 
+
+        .arrow {        
+            a {
+                color: #E86AD0;
+                &:hover {
+                    color: $primary;
+                }
+
+            }
+        }
+    }
+}

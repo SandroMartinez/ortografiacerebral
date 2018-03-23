@@ -1,37 +1,42 @@
 .hero{
     top: 0;
     width: 100vw;
-    padding-top: 16vh;
-
+    padding-top: 12vh;
+  
     @include background-2x( '../img/hero_bg_xs', 'jpg');
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
-    height: 115vmax;
+    height: 150vmax;
 
     @include media-breakpoint-up(sm) { 
-        padding-top: 32vh;
+        padding-top: 19vh;
 
         @include background-2x( '../img/hero_bg', 'jpg');
         background-repeat:no-repeat;
         background-position: center;
         background-size: cover;
-        height: 115vh;
+        height: 120vh;
     }
-    
-    .hero-arrow {
-        position: absolute;
-        bottom: 0;
-        text-align: center;
-        margin-bottom: 7vh; 
-        color: $primary;
 
-        a {
-            &:hover {
-                color: $secondary;
-            }
-    
+    h3 {
+        letter-spacing: -1px;
+        @include media-breakpoint-up(xl) {
+            letter-spacing: 1px;
         }
+    }
 
+    h4 {
+        letter-spacing: -1px;
+        @include media-breakpoint-up(sm) {
+            letter-spacing: -2px;
+            word-spacing: -1px;
+        }
+        @include media-breakpoint-up(md) {
+            letter-spacing: 0px;
+        }
+        @include media-breakpoint-up(xl) {
+            letter-spacing: 3px;
+        }
     }
 }

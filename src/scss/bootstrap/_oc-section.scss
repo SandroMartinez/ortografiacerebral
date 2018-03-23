@@ -1,128 +1,35 @@
-.oc-section {
-    position: relative;
-    top: -19vh;
-   // height: 80vh;
+.oc {
+    color: white;
+    background: linear-gradient(to right, #001B6B, #064DD0);
 
-    .tab-pane {
-        @include media-breakpoint-down(xs) {
-            display: block !important;
-        }
-        
-    }
-    
-    .fade {
-        @include media-breakpoint-down(xs) {
-            opacity: 1;
-        }
+    .top {
+        background-color: white;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
     }
 
-
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-
-        h3 {
-            z-index: 2002;
-        }
-
-        .top {
-            width: 100vw;
-            z-index: 2000;
-            @include background-2x( '../img/oc_section_bg_top', 'png');
-            background-repeat:no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 15vmax;        
-
-            @include media-breakpoint-up(sm) {
-                &::after{
-                    display: block;
-                    position: relative;
-                    bottom: -14vmax;
-                    right: 0;
-                    margin-left: 30vw;
-                    background-image: linear-gradient(to right, transparent 30%, #2E5C8E 100%);
-                    height: 1vmax; 
-                    width: auto;
-                    content: '';            
-                }
+    .content {
+        .image-container {
+            position: relative;
+            .image {
+                padding-left: 19px;
+                padding-right: 5px;
             }
-        }
-        
-        .bottom {
-            width: 100vw;
-            z-index: 2000;
-            @include background-2x( '../img/oc_section_bg_bottom', 'png');
-            background-repeat:no-repeat;
-            background-position: center;
-            background-size: cover;
-            height: 7.2vmax;
-
-            @include media-breakpoint-up(sm) {
-                &::after{
-                    display: block;
-                    position: relative;
-                    bottom: 0vmax;
-                    right: 0;
-                    margin-left: 30vw;
-                    background-image: linear-gradient(to right, transparent 30%, #2E5C8E 100%);
-                    height: 5.98vmax; 
-                    width: auto;
-                    content: '';            
-                }
-            }
-
-        }
-
-        .middle {
-            background-color: #001B6B;
-
-            @include media-breakpoint-down(xs){
-                height: 1400px;
-            }
-
-            @include media-breakpoint-up(sm){
-                &::after {
-                       display: block;
-                       position: relative;
-                       top: 0;
-                       right: 0;
-                       margin-left: 30vw;
-                       background-image: linear-gradient(to right, transparent 30%, #2E5C8E 100%);
-                       height: 70vmin; 
-                       width: auto;
-                       content: '';            
-                   }
-            }
-            
-            .nav-link {
-                color: white;  
-                font-weight: 200;
-                text-transform: uppercase;
-                background-image: url('../img/separator.png') ;
-                background-repeat: no-repeat;
-                background-position: left;
-                background-size: 1px;
-                margin-bottom: 15px;
-            }
-
-            .nav-link.active {
-                font-weight: 400;
-                background-size: 3.5px;
-            }
-
-            .content {
+            .play-btn {
                 position: absolute;
-                color: white;
-                z-index: 2001;
-
-                .play-btn {
-                    position: absolute;
-                    bottom: -30px;
-                    right: 0;
-
+                right: 0;
+                bottom: 10%;
+                @include media-breakpoint-up(sm) { 
+                    bottom: 30%;
+                }
+                @include media-breakpoint-up(md) { 
+                    bottom: 20%;
+                }
+                @include media-breakpoint-up(xl) { 
+                    right: 10%;
+                    bottom: 20%;
                 }
             }
-        }
+        } 
     }
 }

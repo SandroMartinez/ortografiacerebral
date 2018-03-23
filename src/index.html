@@ -4,18 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prueba</title>
+  <title>Ortografía Cerebral - Dra. Mirna Juraidini</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg position-absolute p-0">
-    <a class="navbar-brand ml-5 mr-0 pt-0" href="#">
-      <img class="img-fluid" src=img/logo.png alt="ortografía cerebral" />
-    </a>
-    <!-- <h4 class="navbar-title ml-auto">Ortografía</h4>
-    <img class="nav-separator mx-3" src="img/separator.png" alt="|" /> -->
-    <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+  <nav class="navbar navbar-expand-lg position-absolute p-0 mt-2 mt-sm-4">
+    <button class="navbar-toggler ml-auto mr-sm-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa fa-bars fa-2x"></i>
     </button>
@@ -27,181 +22,489 @@
             </a>
             <div class="dropdown-menu">
               <a data-scroll href="#oc-section" class="dropdown-item">Cerebral</a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Financiera</a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item">Empresarial</a>
+              <a data-scroll href="#of-section" class="dropdown-item">Financiera</a>
+              <a data-scroll href="#oe-section" class="dropdown-item">Empresarial</a>
           </div>
         </li>
         <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="#oc-section">Ortografía Cerebral</a>
+            <a data-scroll class="nav-link" href="#oc-section">Ortografía Cerebral</a>
         </li>
         <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="#">Ortografía Financiera</a>
+            <a data-scroll="" class="nav-link" href="#of-section">Ortografía Financiera</a>
         </li>
         <li class="nav-item d-block d-lg-none">
-            <a class="nav-link" href="#">Ortografía Empresarial</a>
+            <a data-scroll class="nav-link" href="#oe-section">Ortografía Empresarial</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Mujeres Adas</a>
-        </li>
-            <li class="nav-item">
-        <a class="nav-link" href="#">Eventos</a>
+            <a data-scroll class="nav-link" href="#ma-section">Mujeres Adas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Instructores</a>
+          <a data-scroll class="nav-link" href="#">Eventos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sobre la Autora</a>
+          <a data-scroll class="nav-link" href="#">Instructores</a>
+        </li>
+        <li class="nav-item">
+          <a data-scroll class="nav-link" href="#">Sobre la Autora</a>
+        </li>
+        <li class="nav-item">
+          <a data-scroll class="nav-link" href="#">Testimonios</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <div class="hero">
-    <div class="row mx-0">
-      <div class="col-12 col-sm-7 text-white d-flex justify-content-center">
-        <h2 class="animated slideInUp mt-5">Traductora de tu inconsciente...</h2>
-      </div>
-      <div class="col-md-6"></div>
-    </div>
-    <div class="row mx-0 pt-md-3 pt-lg-4">
-      <div class="col-2 col-sm-1"></div>
-      <div class="col-2 col-lg-2 p-0 d-flex justify-content-end">
-        <a class="play-btn animated slideInUp" href="#">
-          <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
-          <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
-        </a>
-      </div>
-      <div class="m-0 col-8 col-sm-4 col-lg-4 text-white d-flex justify-content-start align-items-center">
-        <h3 class="animated slideInUp">Dra. Mirna Juraidini</h3>
-      </div>
-    </div>
-    <div class="row mx-0 d-flex justify-content-center">
-      <div class="hero-arrow col-1 d-none d-sm-block">
-        <a href="#oc-section">
-            <i class="fa fa-angle-down fa-4x"></i>
-        </a>
+  <div class="hero text-white">
+    <div class="row">
+        <div class="col-4 col-sm-2"></div> <!-- left margin-->
+
+        <div class="col-4 col-sm-2 animated slideInDown"> <!-- content -->
+          <img class="img-fluid d-sm-none" src="img/mirna_xs.png" srcset="img/mirna_xs@2x.png 2x" alt="Mirna Juraidini">
+          <img class="img-fluid d-none d-sm-block" src="img/mirna.png" srcset="img/mirna@2x.png 2x" alt="Mirna Juraidini">
+        </div>
+        <div class="col-4 col-sm-8"></div> <!-- right margin -->
+        <div class="col-1"></div>  <!-- left margin -->
+        <div class="col-10 col-sm-4">
+          <div class="row mt-3 animated slideInDown">
+            <div class="col-12 d-flex justify-content-center align-items-center">
+              <a class="play-btn" href="#">
+                <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
+                <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
+              </a>
+              <h3 class="ml-3 d-inline-block">Dra. Mirna Juraidini</h3>
+          </div>
+          <div class="col-12 mt-4 mt-sm-3  d-flex justify-content-center">
+            <h4 class="font-weight-light">Traductora de tu inconsciente...</h4>
+          </div>
+        </div>
+      </div>  <!-- content -->
+      
+      <div class="col-1 col-sm-7"></div>  <!-- right margin -->
+      <div class="col-12 pt-5 mt-4 d-flex justify-content-center">
+          <div class="arrow pt-4 text-center col-1 d-none d-sm-block animated fadeInUp">
+              <a data-scroll href="#oc-section">
+                  <i class="fa fa-angle-down fa-5x"></i>
+              </a>
+            </div>
       </div>
     </div>
   </div>
 
-  <section id="oc-section" class="oc-section">
-    <div class="row">
-      <div class="top col-12 px-0"></div>
-    </div>
-    <div class="row">
-      <div class="middle col-12 px-0">
-        <div class="content w-100">
-          <div class="row">
-            <div class="col-1"></div>
-            <div class="col-10 px-0 py-4">
-                <h3 class="text-uppercase text-center text-md-left">Ortografía Cerebral</h3>
-            </div>
+  <section id="oc-section" class="oc">
+      <div class="top"></div>
+      <div class="content d-column align-items-sm-center">
+        <div class="row">
+          <div class="col-1"></div> 
+          <div class="col-10 my-5 text-center text-sm-left text-uppercase">
+            <h4 class="oc-title">Ortografía Cerebral</h4>
+          </div> 
+          <div class="col-1"></div>
+          <div class="col-1"></div>
+          <div class="col-2 sub-menu d-none d-sm-block">
+            <div class="nav flex-column" id="v-tab" role="tablist" aria-orientation="vertical">
+              <a data-scroll-ignore class="nav-link active" id="oc-whatis-tab" data-toggle="pill" href="#oc-whatis" role="tab" aria-controls="oc-whatis" aria-selected="true">¿Qué es?</a>
+              <a data-scroll-ignore class="nav-link" id="oc-book-tab" data-toggle="pill" href="#oc-book" role="tab" aria-controls="oc-book" aria-selected="false">Libro</a>
+              <a data-scroll-ignore class="nav-link" id="oc-pothos-tab" data-toggle="pill" href="#oc-pothos" role="tab" aria-controls="oc-pothos" aria-selected="false">Fotos</a>
+            </div>            
+          </div> <!-- fin de submenu -->
+          <div class="col-10 col-sm-8 tab-content" id="oc-tabContent">
+              <div class="tab-pane fade show active" id="oc-whatis" role="tabpanel" aria-labelledby="oc-whatis-tab">                       
+                  <div class="row">
+                    <div class="col-12 col-sm-4 image-container d-flex align-items-center justify-content-center">
+                      <img class="img-fluid image" src="img/oc_img.png" srcset="img/oc_img@2x.png 2x" alt="ortografía cerebral" >
+                      <a data-scroll-ignore class="play-btn" href="#">
+                        <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
+                        <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
+                      </a>
+                    </div>
+                    <div class="col-12 col-sm-8 pl-sm-4 my-4 my-sm-0  d-flex align-items-center">
+                      <p class="text-justify">
+                          Es una técnica creada por la Dra. Mirna Juraidini desde 1998, basada en Neurofisiología, Química Cerebral, Ingeniería del Pensamiento, P.N.L. y algunas terapias alternativas. Te apoyará a descubrir la información específica que está almacenada en el cerebro reptil (tu inconsciente) grabada en un instante de tu vida entre los 0 y 13 años que fue tapada por tu cerebro, que te ha llevado a ser y tener lo que has vivido hasta este momento. 
+                          <br><br>Al descubrir y reconocer se solucionan problemas o situaciones que enfrentas. Tus pensamientos creados y aprendidos desde tu infancia son el resultado de lo que hoy eres y serás. Cada persona es el resultado de sus experiencias; pues cada una de nuestras ideas y pensamiento está creando nuestro futuro. Si los resultados que has obtenido hasta este momento de tu vida te agradan y te han dado buenos resultados, te felicito, puedes seguir como estas, pero si estas en la búsqueda, ¡de nuevos resultados y quieres llegar a tener éxito, felicidad, armonía ¡VEN Y DESCUBRE TU REALIDAD con ORTOGRAFÍA CEREBRAL!
+                      </p>
+                    </div>
+                    <div class="col-12 py-3 pt-sm-0 text-center text-sm-right">
+                        <button type="button" class="btn btn-primary btn-lg mt-1">Ver Informes de Cursos</button>
+                    </div>
+                </div>                    
+                </div> <!-- whatis end -->
+                <div class="tab-pane fade" id="oc-book" role="tabpanel" aria-labelledby="oc-book-tab">
+                    <div class="row">
+                      <div class="col-12 col-sm-4 pl-sm-4 image-container d-flex align-items-center justify-content-center order-sm-2">
+                        <img class="img-fluid p-5 p-sm-0" src="img/oc_section_book.png" srcset="img/oc_section_book@2x.png 2x" alt="ortografía cerebral" >
+                      </div>
+                        <div class="col-12 col-sm-8 order-sm-1 d-flex align-items-center">
+                          <p class="text-justify d-block">
+                            Ortografía Cerebral es una técnica basada en química cerebral, neurofisiología, ingeniería del pensamiento y Programación Neurolingüística (PNL), que favorece mejores resultados en la vida cotidiana a través de la modificación del inconsciente.
+                            <br><br>Envía tu foto a <a href="mailto:mirna@ortografiacerebral.com?Subject=Foto para mi libro autografíado" target="_top">mirna@ortografiacerebral.com</a> para que lo recibas autografíado por la autora.
+                          </p>
+                        </div>
+                        <div class="col-12 col-sm-8 order-sm-3 pt-3 pt-sm-0 text-center text-sm-right">
+                          <button type="button" class="btn btn-primary btn-lg mt-1">Comprar Libro</button>
+                        </div>
+                    </div>
+                </div> <!-- book end -->
+                <div class="tab-pane fade" id="oc-pothos" role="tabpanel" aria-labelledby="oc-pothos-tab">  
+                  <div id="carouselOcIndicators" class="carousel py-5 pt-sm-0 d-flex align-items-center slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselOcIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselOcIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselOcIndicators" data-slide-to="2"></li>
+                    </ol>
+                  <div class="carousel-inner d-flex align-items-center ">
+                    <div class="carousel-item text-center active">
+                    <img class="img-fluid img-thumbnail" src="img/oc_photo_1.jpg" srcset="img/oc_photo_1@2x.jpg 2x" alt="imagen">
+                    <div class="carousel-caption">
+                      <h5 class="animated fadeInUp">Diplonado de Ortografía cerebral</h5>
+                      <p class="animated fadeInUp"> Monterrey 2017</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item text-center">
+                      <img class="img-fluid img-thumbnail" src="img/oc_photo_2.jpg" srcset="img/oc_photo_2@2x.jpg 2x" alt="imagen">
+                      <div class="carousel-caption">
+                        <h5 class="animated fadeInUp">Presentación de Libro</h5>
+                        <p class="animated fadeInUp">CDMX</p>
+                      </div>                            
+                    </div>
+                    <div class="carousel-item text-center">
+                      <img class="img-fluid img-thumbnail" src="img/oc_photo_3.jpg" srcset="img/oc_photo_3@2x.jpg 2x" alt="imagen">
+                      <div class="carousel-caption">
+                        <h5 class="animated fadeInUp">Expo Emprendedores 2015</h5>
+                        <p class="animated fadeInUp">WTC CDMX</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a data-scroll-ignore class="carousel-control-prev" href="#carouselOcIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a data-scroll-ignore class="carousel-control-next" href="#carouselOcIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>                    
+              </div>  <!-- carrousel end -->
           </div>
+          <div class="col-1"></div>
+        </div>  <!-- fin de row -->
+        <div class="arrow-content col-12 arrow-content d-flex justify-content-center  animated fadeInUp">
+          <div class="arrow text-center col-1 d-none d-sm-block">
+            <a data-scroll href="#of-section">
+              <i class="fa fa-angle-down fa-5x"></i>
+            </a>
+          </div>
+        </div>
+      </div>  <!-- fin de content -->
+  </section>
+
+  <div class="of-second-background">
+  <section id="of-section" class="of">
+      <div class="top"></div>
+      <div class="content d-column align-items-sm-center">
           <div class="row">
-            <div class="col-1 px-0"></div>
-            <div class="sub-menu col-2 px-0 mt-3 d-none d-sm-block">
-                <div class="nav flex-column" id="v-tab" role="tablist" aria-orientation="vertical">
-                    <a data-scroll-ignore class="nav-link active" id="v-whatis-tab" data-toggle="pill" href="#v-whatis" role="tab" aria-controls="v-whatis" aria-selected="true">¿Qué es?</a>
-                    <a data-scroll-ignore class="nav-link" id="v-book-tab" data-toggle="pill" href="#v-book" role="tab" aria-controls="v-book" aria-selected="false">Libro</a>
-                    <a data-scroll-ignore class="nav-link" id="v-pothos-tab" data-toggle="pill" href="#v-pothos" role="tab" aria-controls="v-pothos" aria-selected="false">Fotos</a>
-                  </div>              
+            <div class="col-1"></div> 
+            <div class="col-10 my-5 text-center text-sm-right text-uppercase">
+              <h4>Ortografía Financiera</h4>
+            </div> 
+            <div class="col-1"></div> <!-- first row end -->
+            <div class="col-1"></div>
+            <div class="col-10 col-sm-8 tab-content" id="of-tabContent">
+                <div class="tab-pane fade show active" id="of-whatis" role="tabpanel" aria-labelledby="of-whatis-tab">                       
+                    <div class="row">
+                      <div class="col-12 col-sm-4 p-3 p-sm-0 image-container d-flex align-items-center justify-content-center order-sm-2">
+                        <img class="img-fluid image" src="img/of_img.png" srcset="img/of_img@2x.png 2x" alt="ortografía cerebral" >
+                        <a data-scroll-ignore class="play-btn" href="#">
+                          <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
+                          <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
+                        </a>
+                      </div>
+                      <div class="col-12 col-sm-8 my-4 my-sm-0  d-flex align-items-center order-sm-1">
+                        <p class="text-justify">
+                          Es un curso – Taller que el objetivo principal es llevar a la persona a descubrir la información específica y personal que la mantiene bloqueada de cualquier forma con el Dinero. Es conocer los cómos y para que de la organización del dinero tanto personal, familiar y empresarial.
+                          <br/><br/>Basada en la estructura y funcionamiento cerebral con Ingeniería del pensamiento, P.N.L., inteligencias de Garner y Química cerebral. 
+                          <br/>Conoce tus Creencias, habilidades, fortalezas y debilidades capitalízalas y transforma tu vida económica desde tu realidad personal, sin la influencia de irrealidades.
+                          <br/><br/>¡Date cuenta que si sigues haciendo lo que hasta ahora has hecho no llegaras mas lejos de donde estas!
+                        </p>
+                      </div>
+                      <div class="col-12 col-sm-8 py-3 pt-sm-0 text-center text-sm-left order-sm-3">
+                          <button type="button" class="btn btn-primary btn-lg mt-1">Ver Informes de Cursos</button>
+                      </div>
+                  </div>                    
+                  </div> <!-- whatis end -->
+                  <div class="tab-pane fade" id="of-pothos" role="tabpanel" aria-labelledby="of-pothos-tab">  
+                    <div id="carouselOfIndicators" class="carousel py-5 pt-sm-0 d-flex align-items-center slide" data-ride="carousel">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselOfIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselOFIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselOfIndicators" data-slide-to="2"></li>
+                      </ol>
+                    <div class="carousel-inner d-flex align-items-center ">
+                      <div class="carousel-item text-center active">
+                      <img class="img-fluid img-thumbnail" src="img/oc_photo_1.jpg" srcset="img/oc_photo_1@2x.jpg 2x" alt="imagen">
+                      <div class="carousel-caption">
+                        <h5 class="animated fadeInUp">Diplonado de Ortografía cerebral</h5>
+                        <p class="animated fadeInUp"> Monterrey 2017</p>
+                      </div>
+                      </div>
+                      <div class="carousel-item text-center">
+                        <img class="img-fluid img-thumbnail" src="img/oc_photo_2.jpg" srcset="img/oc_photo_2@2x.jpg 2x" alt="imagen">
+                        <div class="carousel-caption">
+                          <h5 class="animated fadeInUp">Presentación de Libro</h5>
+                          <p class="animated fadeInUp">CDMX</p>
+                        </div>                            
+                      </div>
+                      <div class="carousel-item text-center">
+                        <img class="img-fluid img-thumbnail" src="img/oc_photo_3.jpg" srcset="img/oc_photo_3@2x.jpg 2x" alt="imagen">
+                        <div class="carousel-caption">
+                          <h5 class="animated fadeInUp">Expo Emprendedores 2015</h5>
+                          <p class="animated fadeInUp">WTC CDMX</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a data-scroll-ignore class="carousel-control-prev" href="#carouselOfIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a data-scroll-ignore class="carousel-control-next" href="#carouselOfIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>                    
+                </div>  <!-- carrousel end -->
             </div>
-            <div class="col-10 col-sm-8 p-0">
-                <div class="tab-content" id="v-tabContent">
-                    <div class="tab-pane fade show active" id="v-whatis" role="tabpanel" aria-labelledby="v-whatis-tab">                       
-                      <div class="row">
-                        <div class="col-12 col-sm-4 mt-4">
-                            <img class="img-fluid" src="img/oc_img.jpg" srcset="img/oc_img@2x.jpg 2x" alt="ortografía cerebral" >
+            <div class="col-2 sub-menu d-none d-sm-block">
+              <div class="nav flex-column" id="of-tab" role="tablist" aria-orientation="vertical">
+                <a data-scroll-ignore class="nav-link nav-link-inverted active" id="of-whatis-tab" data-toggle="pill" href="#of-whatis" role="tab" aria-controls="of-whatis" aria-selected="true">¿Qué es?</a>
+                <a data-scroll-ignore class="nav-link nav-link-inverted" id="of-pothos-tab" data-toggle="pill" href="#of-pothos" role="tab" aria-controls="of-pothos" aria-selected="false">Fotos</a>
+              </div>            
+            </div> <!-- submenu end-->
+            <div class="col-1"></div>
+          </div>  <!-- fin de row -->
+          <div class="arrow-content col-12 arrow-content d-flex justify-content-center  animated fadeInUp">
+              <div class="arrow text-center col-1 d-none d-sm-block">
+                <a href="#oe-section">
+                  <i class="fa fa-angle-down fa-5x"></i>
+                </a>
+              </div>
+            </div>
+        </div> 
+      </section>
+    </div>   
+
+    <div class="oe-second-background">
+        <section id="oe-section" class="oe">
+            <div class="content d-column align-items-sm-center">
+              <div class="row">
+                <div class="col-1"></div> 
+                <div class="col-10 my-5 mt-sm-1 text-center text-sm-left text-uppercase">
+                  <h4>Ortografía Empresarial</h4>
+                </div> 
+                <div class="col-1"></div> <!-- first row end -->
+                <div class="col-1"></div>
+                <div class="col-2 sub-menu d-none d-sm-block">
+                  <div class="nav flex-column" id="oe-tab" role="tablist" aria-orientation="vertical">
+                    <a data-scroll-ignore class="nav-link active" id="oe-whatis-tab" data-toggle="pill" href="#oe-whatis" role="tab" aria-controls="oe-whatis" aria-selected="true">¿Qué es?</a>
+                    <a data-scroll-ignore class="nav-link" id="oe-info-tab" data-toggle="pill" href="#oe-info" role="tab" aria-controls="oe-info" aria-selected="false">Estudio de tu empresa</a>
+                    <a data-scroll-ignore class="nav-link" id="oe-pothos-tab" data-toggle="pill" href="#oe-pothos" role="tab" aria-controls="oe-pothos" aria-selected="false">Fotos</a>
+                  </div>            
+                </div> <!-- fin de submenu -->
+                <div class="col-10 col-sm-8 tab-content" id="oe-tabContent">
+                    <div class="tab-pane fade show active" id="oe-whatis" role="tabpanel" aria-labelledby="oe-whatis-tab">                       
+                        <div class="row">
+                          <div class="col-12 col-sm-5 image-container d-flex align-items-center justify-content-center order-sm-2">
+                            <img class="img-fluid image" src="img/oe_img.png" srcset="img/oe_img@2x.png 2x" alt="ortografía empresarial" >
                             <a data-scroll-ignore class="play-btn" href="#">
                               <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
                               <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
                             </a>
-                        </div>
-                        <div class="col-12 px-0 pl-sm-5 mt-5 pt-5 mt-sm-0 pt-sm-0 col-sm-8 d-flex align-items-center">
-                          <p class="text-justify text-sm-left">
-                              Descubre aquello que grabaste en tu inconsciente, eso que te hace quien eres y que atrae a tu vida todo lo que tienes o no tienes...
-                          </p>
-                        </div>
-                        <div class="col-12 px-0">
-                              <p class="text-right">
-                                  !Deja de sobrevivir comienza a vivir!
-                              </p>    
-                        </div>
-                      </div>                    
-                    </div>
-                    <div class="tab-pane fade" id="v-book" role="tabpanel" aria-labelledby="v-book-tab">
-                      <div class="row">
-                        <div class="col-12 col-sm-4 mt-4 order-sm-9">
-                            <img class="img-fluid p-5 p-sm-0" src="img/oc_section_book.png" srcset="img/oc_section_book@2x.png 2x" alt="ortografía cerebral" >
-                        </div>
-                        <div class="col-sm-8 px-0 d-flex align-items-center">
-                          <div class="row">
-                            <div class="col-12 px-0">
-                              <p class="text-justify text-sm-right ">
-                                Ortografía Cerebral es una técnica basada en química cerebral, neurofisiología, ingeniería del pensamiento y Programación Neurolingüística (PNL), que favorece mejores resultados en la vida cotidiana a través de la modificación del inconsciente.
-                              </p>        
-                            </div>
-                            <div class="col-12 d-flex justify-content-end">
-                                <button type="button" class="btn btn-secondary mt-4">Comprar Libro</button>
-                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pothos" role="tabpanel" aria-labelledby="v-pothos-tab">
-                      
-                      <div id="carouselExampleIndicators" class="carousel mt-5 pt-4 d-flex align-items-center slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        </ol>
+                          <div class="col-12 col-sm-7 my-5 my-sm-0 d-flex align-items-center order-sm-1">
+                            <p class="text-justify">
+                                Curso – Taller diseñado para las empresas, creando un sistema organizacional y trabajo en equipo conociendo y capitalizando la información personal de sus integrantes para una mejora continúa logrando una cultura de calidad y calidez, bajo una estructura funcional y productiva.
+                            </p>
+                          </div>
+                          <div class="col-12 col-sm-7 py-3 pt-sm-0 text-center text-sm-left order-sm-3">
+                              <button type="button" class="btn btn-primary btn-lg mt-1">Ver Informes de Cursos</button>
+                          </div>
+                      </div>                    
+                      </div> <!-- whatis end -->
+                      <div class="tab-pane fade" id="oe-info" role="tabpanel" aria-labelledby="oe-info-tab">
+                          <div class="row">
+                            <div class="col-12 col-sm-4 pl-sm-4 image-container d-flex align-items-center justify-content-center order-sm-2">
+                              <img class="img-fluid p-5 p-sm-0" src="img/oc_section_book.png" srcset="img/oc_section_book@2x.png 2x" alt="ortografía cerebral" >
+                            </div>
+                              <div class="col-12 col-sm-8 order-sm-1 d-flex align-items-center">
+                                <p class="text-justify d-block">
+                                  Ortografía Cerebral es una técnica basada en química cerebral, neurofisiología, ingeniería del pensamiento y Programación Neurolingüística (PNL), que favorece mejores resultados en la vida cotidiana a través de la modificación del inconsciente.
+                                  <br><br>Envía tu foto a <a href="mailto:mirna@ortografiacerebral.com?Subject=Foto para mi libro autografíado" target="_top">mirna@ortografiacerebral.com</a> para que lo recibas autografíado por la autora.
+                                </p>
+                              </div>
+                              <div class="col-12 col-sm-8 order-sm-3 pt-3 pt-sm-0 text-center text-sm-right">
+                                <button type="button" class="btn btn-primary btn-lg mt-1">Comprar Libro</button>
+                              </div>
+                          </div>
+                      </div> <!-- book end -->
+                      <div class="tab-pane fade" id="oe-pothos" role="tabpanel" aria-labelledby="oe-pothos-tab">  
+                        <div id="carouselOeIndicators" class="carousel py-5 pt-sm-0 d-flex align-items-center slide" data-ride="carousel">
+                          <ol class="carousel-indicators">
+                            <li data-target="#carouselOeIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselOeIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselOeIndicators" data-slide-to="2"></li>
+                          </ol>
                         <div class="carousel-inner d-flex align-items-center ">
                           <div class="carousel-item text-center active">
-                              <img class="img-fluid img-thumbnail" src="img/oc_photo_1.jpg" srcset="img/oc_photo_1@2x.jpg 2x" alt="imagen">
-                              <div class="carousel-caption">
-                                <h5 class="animated fadeInUp">Diplonado de Ortografía cerebral</h5>
-                                <p class="animated fadeInUp"> Monterrey 2017</p>
-                              </div>
-                            </div>
-                            <div class="carousel-item text-center">
-                                <img class="img-fluid img-thumbnail" src="img/oc_photo_2.jpg" srcset="img/oc_photo_2@2x.jpg 2x" alt="imagen">
-                                <div class="carousel-caption">
-                                  <h5 class="animated fadeInUp">Presentación de Libro</h5>
-                                  <p class="animated fadeInUp">CDMX</p>
-                                </div>                            
-                            </div>
-                            <div class="carousel-item text-center">
-                                <img class="img-fluid img-thumbnail" src="img/oc_photo_3.jpg" srcset="img/oc_photo_3@2x.jpg 2x" alt="imagen">
-                                <div class="carousel-caption">
-                                  <h5 class="animated fadeInUp">Expo Emprendedores 2015</h5>
-                                  <p class="animated fadeInUp">WTC CDMX</p>
-                                </div>
-                              </div>
+                          <img class="img-fluid img-thumbnail" src="img/oc_photo_1.jpg" srcset="img/oc_photo_1@2x.jpg 2x" alt="imagen">
+                          <div class="carousel-caption">
+                            <h5 class="animated fadeInUp">Diplonado de Ortografía cerebral</h5>
+                            <p class="animated fadeInUp"> Monterrey 2017</p>
                           </div>
-                          <a data-scroll-ignore class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          </div>
+                          <div class="carousel-item text-center">
+                            <img class="img-fluid img-thumbnail" src="img/oc_photo_2.jpg" srcset="img/oc_photo_2@2x.jpg 2x" alt="imagen">
+                            <div class="carousel-caption">
+                              <h5 class="animated fadeInUp">Presentación de Libro</h5>
+                              <p class="animated fadeInUp">CDMX</p>
+                            </div>                            
+                          </div>
+                          <div class="carousel-item text-center">
+                            <img class="img-fluid img-thumbnail" src="img/oc_photo_3.jpg" srcset="img/oc_photo_3@2x.jpg 2x" alt="imagen">
+                            <div class="carousel-caption">
+                              <h5 class="animated fadeInUp">Expo Emprendedores 2015</h5>
+                              <p class="animated fadeInUp">WTC CDMX</p>
+                            </div>
+                          </div>
+                        </div>
+                        <a data-scroll-ignore class="carousel-control-prev" href="#carouselOeIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a data-scroll-ignore class="carousel-control-next" href="#carouselOeIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>                    
+                    </div>  <!-- carrousel end -->
+                </div>
+                <div class="col-1"></div>
+              </div>  <!-- fin de row -->
+              <div class="arrow-content col-12 arrow-content d-flex justify-content-center  animated fadeInUp">
+                  <div class="arrow text-center col-1 d-none d-sm-block">
+                    <a data-scroll href="#ma-section">
+                      <i class="fa fa-angle-down fa-5x"></i>
+                    </a>
+                  </div>
+              </div>
+            </div>  <!-- fin de content -->
+        </section>        
+    </div>  
+
+        <section id="ma-section" class="ma">
+            <div class="top"></div>
+            <div class="content d-column align-items-sm-center">
+                <div class="row">
+                  <div class="col-1"></div> 
+                  <div class="col-10 mt-5 my-sm-5 text-center text-sm-right text-uppercase">
+                    <h4>Mujeres ADas sin "H"</h4>
+                  </div> 
+                  <div class="col-1"></div> <!-- first row end -->
+                  <div class="col-1"></div>
+                  <div class="col-10 col-sm-8 tab-content" id="ma-tabContent">
+                      <div class="tab-pane fade show active" id="ma-whatis" role="tabpanel" aria-labelledby="ma-whatis-tab">                       
+                          <div class="row">
+                            <div class="col-12 col-sm-5 p-3 p-sm-0 image-container d-flex align-items-center justify-content-center">
+                              <img class="img-fluid image" src="img/ma_img.png" srcset="img/ma_img@2x.png 2x" alt="Mujeres Adas sin H" >
+                              <a data-scroll-ignore class="play-btn" href="#">
+                                <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
+                                <img class="img-fluid" src="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
+                              </a>
+                            </div>
+                            <div class="col-12 col-sm-7 my-4 my-sm-0 pl-sm-3 d-flex align-items-center">
+                              <p class="text-justify">
+                                  Es un curso, Taller y Libro creado y escrito por la Dra. Mirna Juraidini, para las mujeres en diferentes situaciones de status, belleza, economía y vida como casadADAS, separadADAS, divorciadADAS, quedadADAS, enviudadADAS, y que se sientan pateadADAS, por la vida, basadas en el desarrollo del cerebro de la mujer, sus acciones reacciones, pensamientos, inquietudes, dificultades etc.
+                                  <br><br>Si quieres entenderte, aceptarte y REALIZARTE como Mujer ven o lee  MUJERES ADAS SIN “H”
+                              </p>
+                            </div>
+                            <div class="col-12 col-sm-12 py-0 pt-sm-0 text-center text-sm-right">
+                                <button type="button" class="btn btn-primary btn-lg mt-1">Ver Informes de Cursos</button>
+                            </div>
+                        </div>                    
+                        </div> <!-- whatis end -->
+                        <div class="tab-pane fade" id="ma-book" role="tabpanel" aria-labelledby="ma-book-tab">
+                            <div class="row">
+                              <div class="col-12 col-sm-4 pl-sm-4 image-container d-flex align-items-center justify-content-center">
+                                <img class="img-fluid p-5 p-sm-0" src="img/oc_section_book.png" srcset="img/oc_section_book@2x.png 2x" alt="ortografía cerebral" >
+                              </div>
+                                <div class="col-12 col-sm-8 d-flex align-items-center">
+                                  <p class="text-justify d-block">
+                                    Ortografía Cerebral es una técnica basada en química cerebral, neurofisiología, ingeniería del pensamiento y Programación Neurolingüística (PNL), que favorece mejores resultados en la vida cotidiana a través de la modificación del inconsciente.
+                                    <br><br>Envía tu foto a <a href="mailto:mirna@ortografiacerebral.com?Subject=Foto para mi libro autografíado" target="_top">mirna@ortografiacerebral.com</a> para que lo recibas autografíado por la autora.
+                                  </p>
+                                </div>
+                                <div class="col-sm-4 d-none d-sm-block"></div>
+                                <div class="col-12 col-sm-8 pt-3 pt-sm-0 text-center text-sm-left">
+                                  <button type="button" class="btn btn-primary btn-lg mt-1">Comprar Libro</button>
+                                </div>
+                            </div>
+                        </div> <!-- book end -->                        
+                        <div class="tab-pane fade" id="ma-pothos" role="tabpanel" aria-labelledby="ma-pothos-tab">  
+                          <div id="carouselMaIndicators" class="carousel py-5 pt-sm-0 d-flex align-items-center slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselMaIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselMaIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselMaIndicators" data-slide-to="2"></li>
+                            </ol>
+                          <div class="carousel-inner d-flex align-items-center ">
+                            <div class="carousel-item text-center active">
+                            <img class="img-fluid img-thumbnail" src="img/oc_photo_1.jpg" srcset="img/oc_photo_1@2x.jpg 2x" alt="imagen">
+                            <div class="carousel-caption">
+                              <h5 class="animated fadeInUp">Diplonado de Ortografía cerebral</h5>
+                              <p class="animated fadeInUp"> Monterrey 2017</p>
+                            </div>
+                            </div>
+                            <div class="carousel-item text-center">
+                              <img class="img-fluid img-thumbnail" src="img/oc_photo_2.jpg" srcset="img/oc_photo_2@2x.jpg 2x" alt="imagen">
+                              <div class="carousel-caption">
+                                <h5 class="animated fadeInUp">Presentación de Libro</h5>
+                                <p class="animated fadeInUp">CDMX</p>
+                              </div>                            
+                            </div>
+                            <div class="carousel-item text-center">
+                              <img class="img-fluid img-thumbnail" src="img/oc_photo_3.jpg" srcset="img/oc_photo_3@2x.jpg 2x" alt="imagen">
+                              <div class="carousel-caption">
+                                <h5 class="animated fadeInUp">Expo Emprendedores 2015</h5>
+                                <p class="animated fadeInUp">WTC CDMX</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a data-scroll-ignore class="carousel-control-prev" href="#carouselMaIndicators" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                           </a>
-                          <a  data-scroll-ignore class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <a data-scroll-ignore class="carousel-control-next" href="#carouselMaIndicators" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                           </a>
-                        </div>
-
+                        </div>                    
+                      </div>  <!-- carrousel end -->
+                  </div>
+                  <div class="col-2 sub-menu d-none d-sm-block">
+                    <div class="nav flex-column" id="ma-tab" role="tablist" aria-orientation="vertical">
+                        <a data-scroll-ignore class="nav-link nav-link-inverted active" id="ma-whatis-tab" data-toggle="pill" href="#ma-whatis" role="tab" aria-controls="ma-whatis" aria-selected="true">¿Qué es?</a>
+                        <a data-scroll-ignore class="nav-link nav-link-inverted" id="ma-book-tab" data-toggle="pill" href="#ma-book" role="tab" aria-controls="ma-book" aria-selected="false">Libro</a>
+                        <a data-scroll-ignore class="nav-link nav-link-inverted" id="ma-pothos-tab" data-toggle="pill" href="#ma-pothos" role="tab" aria-controls="ma-pothos" aria-selected="false">Fotos</a>
+                    </div>            
+                  </div> <!-- submenu end-->
+                  <div class="col-1"></div>
+                </div>  <!-- fin de row -->
+                <div class="arrow-content col-12 arrow-content d-flex justify-content-center  animated fadeInUp">
+                    <div class="arrow text-center col-1 d-none d-sm-block">
+                      <a data-scroll href="#ev-section">
+                        <i class="fa fa-angle-down fa-5x"></i>
+                      </a>
                     </div>
                   </div>
-            </div>
-            <div class="col-1 px-0"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="bottom col-12 px-0"></div>
-    </div>
-  </section>
+              </div> 
+            </section>
+
 </body>
 </html>

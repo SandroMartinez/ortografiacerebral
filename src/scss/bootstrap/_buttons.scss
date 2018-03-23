@@ -17,3 +17,13 @@
         }
     }
 }
+
+.arrow {        
+    a {
+        color: white;
+        &:hover {
+            color: $primary;
+        }
+
+    }
+}

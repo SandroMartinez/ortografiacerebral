@@ -1,0 +1,61 @@
+@import "oc-section";
+@import "of-section";
+@import "oe-section";
+@import "ma-section";
+
+$pad-xs: 5vmin;
+$pad-sm: 7vmin;
+$pad-md: 10vmin;
+$pad-lg: 15vmin;
+
+.oc,.of,.oe,.ma {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    @include media-breakpoint-up(sm) { 
+        min-height: 100vmin - $pad-sm;
+    }
+    
+    .top {
+        width: 100vw;
+        height: 5vh;
+        position: absolute;
+        padding: $pad-xs;
+        top: -$pad-xs;
+        @include media-breakpoint-up(sm) { 
+            padding: $pad-sm;
+            top: -$pad-sm;    
+        }
+        @include media-breakpoint-up(md) { 
+            padding: $pad-md;
+            top: -$pad-md;    
+        }
+        @include media-breakpoint-up(lg) {
+            padding: $pad-lg;
+            top: -$pad-lg;    
+         }
+    }
+
+    .content {
+        position: relative;
+        height: auto;
+        margin-top: $pad-xs;
+        @include media-breakpoint-up(sm) { 
+            margin-top: $pad-sm;    
+            min-height: 100vmin - $pad-sm;
+        }
+        @include media-breakpoint-up(md) { 
+            margin-top: $pad-md;    
+            min-height: 100vmin - $pad-md;
+        }
+        @include media-breakpoint-up(lg) {
+            margin-top: $pad-lg;    
+            min-height: 100vmin - $pad-lg;
+        }    
+
+        .arrow-content {
+            position: absolute;
+            bottom: 0;
+        }   
+    }
+}

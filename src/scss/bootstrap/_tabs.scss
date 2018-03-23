@@ -1,0 +1,35 @@
+.oc, .of, .oe, .ma {
+    .tab-pane {
+        @include media-breakpoint-down(xs) {
+            display: block !important;
+        }        
+    }
+    
+    .fade {
+        @include media-breakpoint-down(xs) {
+            opacity: 1;
+        }
+    }
+    
+    .nav-link {
+        color: white;  
+        font-weight: 200;
+        text-transform: uppercase;
+        background-image: url('../img/separator.png') ;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 1px;
+        margin-bottom: 15px;
+    }
+
+    .nav-link-inverted {
+        background-position: right;
+        text-align: right;
+    }
+    
+    .nav-link.active {
+        font-weight: 400;
+        background-size: 3.5px;
+    }
+}
+

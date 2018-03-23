@@ -1,0 +1,60 @@
+.oe-second-background{
+    background: linear-gradient(to right, #3C5EA8, #01247E);
+}
+
+.oe {
+    color: white;
+    background: linear-gradient(to right, #102C73, #3371F9);
+
+    border-top-right-radius: 2%;
+    @include media-breakpoint-up(sm) { 
+        border-top-right-radius: 12%;
+    }
+    @include media-breakpoint-up(md) { 
+        border-top-right-radius: 23%;
+    }
+    @include media-breakpoint-up(lg) {
+        border-top-right-radius: 28%;
+    }    
+
+    .content {
+        .image-container {
+            padding-left: 4.2em !important;
+            padding-right: 4.2em !important;
+            @include media-breakpoint-up(sm) { 
+                padding-left: 2.9em !important;
+                padding-right: 2.9em !important;
+            }
+            @include media-breakpoint-up(md) { 
+                padding-left: 2.5em !important;
+                padding-right: 2.5em !important;
+            }
+            @include media-breakpoint-up(xl) { 
+                padding-left: 2.1em !important;
+                padding-right: 2.1em !important;
+            }
+    
+            position: relative;
+            .image {
+                margin-left: 35px;
+            }
+            .play-btn {
+                position: absolute;
+                left: 2%;
+                bottom: -5%;
+                @include media-breakpoint-up(sm) { 
+                    left: 3%;
+                    bottom: -5%;
+                }
+                @include media-breakpoint-up(md) { 
+                    left:0%;
+                    bottom: -4%;
+                }
+                @include media-breakpoint-up(xl) { 
+                    left: 0%;
+                    bottom: -4%;
+                }
+            }
+        } 
+    }
+}
