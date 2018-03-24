@@ -1,0 +1,46 @@
+.ev {
+    background: linear-gradient(to bottom, #2C589C, #7D97BF);
+    height: auto;
+    color:white;
+
+    .card-header {
+        background: white !important;
+
+    
+        .date {
+            border: 1px solid #BFBFBF;
+            box-shadow: 1.5px 1.5px 4px #5D5D5D;
+            padding: 1em;
+            font-size: 1.2em;
+        }
+
+        .day {
+            color: #112E77;
+            font-size: 1.2em;
+        }
+    }
+
+    .card-body {
+        color: #464646;
+    }
+    
+    .btn {
+        white-space: normal;
+        h5 {
+            color: #308AC1;
+            width: 65%;
+            @include media-breakpoint-up(sm) { 
+                width: 84%;
+                font-size: 1.3em;
+            }
+        }
+    }
+
+    .btn-link {
+        &:hover{
+            text-decoration: none;
+            color: #00B9D8;
+        }
+    }
+
+}

@@ -31,6 +31,9 @@ import '../img/oe_img@2x.png';
 import '../img/ma_img.png';
 import '../img/ma_img@2x.png';
 
+import '../img/avatar1.jpg';
+import '../img/avatar1@2x.jpg';
+
 import 'font-awesome/fonts/fontawesome-webfont.woff2';
 import 'font-awesome/fonts/fontawesome-webfont.woff';
 import  'font-awesome/fonts/fontawesome-webfont.ttf';
@@ -50,20 +53,34 @@ $('.navbar-collapse a').click(function(){
 });
 
 window.sr = ScrollReveal();
-sr.reveal('.navbar', {
-    duration: 2000,
-    origin: 'bottom'
+
+sr.reveal('.play-btn',{
+    duration:1000,
+    delay: 200,
+    origin: 'bottom',
+    distance: '0px',
 });
 sr.reveal('.oc-title', {
-    duration: 2000,
+    duration: 1000,
+    origin: 'top',
+    viewFactor: 0
+});
+sr.reveal('#row-oc-whatis',{
+    duration: 1000,
+    origin: 'right',
+    distance: '2em',
+    viewFactor: 0
+});
+sr.reveal('#oc-tab', {
+    duration: 1000,
     origin: 'left',
-    viewFactor: 0.2
+    viewFactor: 0
 })
 
-
-// $(document).on('scroll', function() {
-//     if( $(this).scrollTop() >= $('#oc-section').position().top ){
-//         $('h4').removeClass('d-none');
-//         $('h4').addClass('animated fadeIn');
-//     }
-// });
+sr.reveal('.btn-primary', {
+    duration:700,
+    delay: 500,
+    origin: 'bottom',
+    distance: '0px',
+    mobile: false
+})

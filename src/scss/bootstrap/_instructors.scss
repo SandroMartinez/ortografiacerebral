@@ -1,0 +1,16 @@
+.in {
+   min-height: 40vh;
+    @include background-2x( '../img/instructors_bg', 'jpg');
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.in-cards {
+    .card {
+        box-shadow: 1.5px 1.5px 4px #5D5D5D;
+        .bg {
+            background-color: #308AC1;
+        } 
+    }
+} 

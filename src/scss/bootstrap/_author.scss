@@ -1,0 +1,58 @@
+.au {
+    height: 70vh;
+    position: relative;
+    color: $primary;
+
+    @include media-breakpoint-up(md) { 
+        height: 85vh;
+        color: white;
+    }
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) { 
+        height: 55vw;        
+    }
+
+    p {
+        a {
+            color: white;
+            font-variant: 800;
+            text-decoration: underline;
+
+            &:hover {
+                color: $primary;
+            }
+        }
+
+        @media only screen 
+        and (min-device-width : 768px) 
+        and (max-device-width : 1024px) 
+        and (orientation : portrait) { 
+            font-size: 0.7em !important;      
+        }
+            
+    }
+
+    @include background-2x( '../img/author_bg', 'jpg');
+    background-repeat:no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.au-more {
+    background-color: #64AFEC;
+    color: white;
+    height: auto;
+
+    a {
+        color: white;
+        font-variant: 800;
+        text-decoration: underline;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
