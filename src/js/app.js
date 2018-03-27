@@ -6,7 +6,6 @@ import '../img/mirna@2x.png'
 import '../img/mirna_xs.png'
 import '../img/mirna_xs@2x.png'
 
-import '../img/loading.gif';
 import '../img/loading-quad.gif';
 import '../img/loading-rect.gif';
 
