@@ -6,6 +6,10 @@ import '../img/mirna@2x.png'
 import '../img/mirna_xs.png'
 import '../img/mirna_xs@2x.png'
 
+import '../img/loading.gif';
+import '../img/loading-quad.gif';
+import '../img/loading-rect.gif';
+
 import '../img/play_btn.png';
 import '../img/play_btn@2x.png';
 import '../img/play_btn@2x.png';
@@ -43,4 +47,5 @@ import 'bootstrap';
 import './bootstrap-custom.js'
 import './carousel.js';
 import './animations.js';
+import './lazy-loading.js'
 

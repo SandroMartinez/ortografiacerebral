@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "animate.css": "^3.6.1",
+    "blazy": "^1.8.2",
     "scrollreveal": "^3.4.0",
     "smooth-scroll": "^12.1.5"
   }

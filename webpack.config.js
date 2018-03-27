@@ -39,7 +39,8 @@ const CONFIG = {
     './src/js/app.js',
     'font-awesome/scss/font-awesome.scss',
     'scrollreveal/dist/scrollreveal.min.js',
-    'animate.css/animate.min.css'
+    'animate.css/animate.min.css',
+    'blazy/blazy.min.js'
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
