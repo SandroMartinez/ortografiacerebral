@@ -13,4 +13,14 @@
             background-color: #308AC1;
         } 
     }
+
+    .arrow {        
+        a {
+            color: #308AC1;
+            &:hover {
+                color: $primary;
+            }
+
+        }
+    }
 } 

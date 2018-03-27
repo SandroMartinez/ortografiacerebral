@@ -55,4 +55,13 @@
             color: $primary;
         }
     }
+
+    .arrow {        
+        a {
+            &:hover {
+                color: #308AC1;
+            }
+
+        }
+    }
 }

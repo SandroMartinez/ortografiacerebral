@@ -1,0 +1,120 @@
+$distance: 6rem;
+
+.testimonials {
+    background-color: #64AFEC;
+    position: relative;
+
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (orientation : portrait) { 
+        height: 70vw;        
+    }
+
+    .card-img-top {
+        width: 45%;
+        position: absolute;
+        left: 29%;
+        top: -$distance;
+        z-index: 2000;
+    }
+
+    .carousel-item {
+        box-sizing: border-box;
+        margin-top: $distance;
+        background-color: white;
+        background-color: #64AFEC;
+    }
+
+    .card {
+        border: 1px solid gray;
+        border-radius: 10px;        
+    }
+    .card-body{
+        padding-top: $distance;
+        font-size: 0.95em;
+        min-height: 45vh;
+        @media only screen 
+        and (min-device-width : 768px) 
+        and (max-device-width : 1024px) 
+        and (orientation : portrait) { 
+            min-height: 20vh;
+        }
+    }
+
+    .carousel-inner {
+        overflow-y: visible;
+        box-sizing: border-box
+    }
+
+    a.carousel-control-next, a.carousel-control-prev {
+        color: white;
+        &:hover{
+            color: $secondary;
+        }
+    }
+
+    @include media-breakpoint-up(sm) { 
+        /* show 3 items */
+        .carousel-inner .active,
+        .carousel-inner .active + .carousel-item,
+        .carousel-inner .active + .carousel-item + .carousel-item {
+            display: block;
+        }
+
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+            transition: none;
+        }
+
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+          position: relative;
+          transform: translate3d(0, 0, 0);
+        }
+    
+        .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -33.3333%;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+
+         /* left or forward direction */
+        .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+
+        /* farthest right hidden item must be abso position for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+    
+        /* right or prev direction */
+        .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+    }     
+}
+
+

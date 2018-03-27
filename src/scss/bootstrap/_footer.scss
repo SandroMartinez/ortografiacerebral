@@ -1,0 +1,29 @@
+footer {
+    &.row {
+        background-color: #2E2E2E;
+        color: white;
+
+        h6 {
+            font-weight: 300;
+            @include media-breakpoint-up(sm) { 
+                font-weight: 400;                
+            }
+        }
+
+        a {
+            color: white;      
+            text-decoration: none;                  
+            &:hover{                
+                h6 {
+                    text-decoration: underline;      
+                    //font-weight: bold !important;
+                }
+            }
+        }
+    }
+
+    .rights {
+        font-size: 0.7rem;
+        font-weight: 200;
+    }
+}
