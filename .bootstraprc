@@ -85,7 +85,7 @@ styles:
 
   # Components w/ JavaScript
   carousel: true
-  modal: false
+  modal: true
   popover: false
   tooltip: false
 
@@ -99,7 +99,7 @@ scripts:
   carousel: true
   collapse: true
   dropdown: true
-  modal: false
+  modal: true
   popover: false
   scrollspy: false
   tab: true

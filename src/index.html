@@ -52,6 +52,28 @@
     </div>
   </nav>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+         <button type="button" class="close d-none d-sm-block" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>        
+          <!-- 16:9 aspect ratio -->
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="" id="video" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  
+  
+  
+
+
   <div class="hero text-white">
     <div class="row">
         <div class="col-4 col-sm-2"></div> <!-- left margin-->
@@ -65,10 +87,11 @@
         <div class="col-10 col-sm-4">
           <div class="row mt-3 animated slideInDown">
             <div class="col-12 d-flex justify-content-center align-items-center">
-              <a data-scroll-ignore class="play-btn" href="#">
+              <a data-scroll-ignore class="play-btn video-btn" data-toggle="modal" data-src="https://www.youtube.com/embed/ResvLnDE6KQ" data-target="#myModal">
                 <img class="img-fluid" src="img/play_btn.png" srcset="img/play_btn@2x.png 2x" alt="play" />
                 <img class="img-fluid" rc="img/play_btn_hover.png" srcset="img/play_btn_hover@2x.png 2x" alt="play" />
               </a>
+
               <h3 class="ml-3 d-inline-block">Dra. Mirna Juraidini</h3>
           </div>
           <div class="col-12 mt-4 mt-sm-3  d-flex justify-content-center">

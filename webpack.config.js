@@ -48,7 +48,15 @@ const CONFIG = {
   },
   module: {
     rules:[
-      { test: /\.html$/, use: 'html-loader' },
+      { 
+        test: /\.html$/, 
+        use: [{
+          loader: 'html-loader', 
+          options: { 
+            minimize: false 
+          } 
+        }]
+      },
       { test: /\.css$/, use: ['style-loader','css-loader'] },
       { test: /\.scss$/, use: cssConfig },
       {
@@ -118,14 +126,15 @@ const CONFIG = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      minify:{
-        collapseWhitespace: false,
-      },
+      minify: false,
+      // minify:{
+      //   collapseWhitespace: false,
+      // },
       hash: true,
       template: './src/index.html'
     }),
     new ExtractTextPlugin({
-      filename: '[name].css',
+      filename: 'style.css',
       disable: !isProd,
       allChunks: true
     }),
